@@ -6,3 +6,18 @@
 body {
 	width: 100%;
 }
+
+header {
+	background-image: url(/img/hero.jpg);
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#title {
+	text-align: center;
+	width: 50%;
+	color: #fff;
+}
