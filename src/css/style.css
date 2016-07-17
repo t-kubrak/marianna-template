@@ -34,7 +34,7 @@ header {
 	color: #000;
 }
 
-.navigation #logo{
+.navigation #logoLink{
 	margin-right: auto;
 }
 
@@ -154,4 +154,8 @@ form input[type='submit']:after {
 	content: '';
     display: block;
     clear: both;
+}
+
+footer {
+	text-align: center;
 }
