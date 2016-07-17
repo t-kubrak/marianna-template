@@ -100,3 +100,23 @@ button#load{
 	background-size: cover;
 	height: 500px;
 }
+
+#follow {
+	text-align: center;
+}
+
+#social {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	padding: 0px; /** remove links padding **/
+}
+
+#social li{
+	margin: 80px 50px 150px;
+	font-size: 20px;
+}
+
+#social a{
+	color: #000;
+}
