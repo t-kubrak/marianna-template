@@ -21,3 +21,20 @@ header {
 	width: 50%;
 	color: #fff;
 }
+
+.navigation {
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.navigation a {
+	text-decoration: none;
+	padding: 1em 1.5em;
+	color: #000;
+}
+
+.navigation #logo{
+	margin-right: auto;
+}
+
