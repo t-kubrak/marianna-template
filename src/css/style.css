@@ -14,12 +14,12 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	color: #fff;
 }
 
-#title {
+.title {
 	text-align: center;
 	width: 50%;
-	color: #fff;
 }
 
 .navigation {
@@ -38,3 +38,8 @@ header {
 	margin-right: auto;
 }
 
+#about {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
