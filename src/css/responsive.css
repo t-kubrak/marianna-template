@@ -1,0 +1,36 @@
+@media screen and (max-width: 1279px) {
+	#gallery {
+		width: 720px;
+		margin: auto;
+	}
+
+	#gallery .col-1 {
+		margin: 0px 0px 20px 0px;
+		width: 100%;
+	}
+
+	#gallery .col-2 {
+		width: 90%;
+		margin: auto;
+	}
+	
+	#gallery .col-2 img {
+		margin: 0px;
+		width: 45%;
+	}
+
+	#gallery .col-2 picture:first-child {
+		margin-right: 5%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+
+	#gallery {
+		width: 100%;
+	}
+
+	#gallery img{
+		max-width: 100%;
+	}
+}

@@ -10,6 +10,7 @@ font-family: 'Playfair Display', serif;*/
 body {
 	width: 100%;
 	font-family: 'Raleway', sans-serif;
+	color: #848282;
 }
 
 header {
@@ -60,7 +61,7 @@ h2 {
 hr {
 	width: 60px;
 	height: 3px;
-	background-color: #D39696;
+	background-color: #d07c7c;
 	border: none;
 }
 
@@ -154,11 +155,15 @@ nav {
 	width: 440px;
 }
 
+.col-2 picture img {
+	margin-bottom: 25px;
+}
+
 button#load{
 	width: 200px;
 	height: 50px;
 	margin: 0px auto 140px;
-	background-color: #E19595;
+	background-color: #d07c7c;
 	color: #fff;
 	border: none;
 	display: block;
@@ -201,7 +206,7 @@ button#load{
 }
 
 #social a{
-	color: #000;
+	color: #848282;
 }
 
 #contact {
@@ -225,7 +230,7 @@ form input[type='text'], form textarea {
 	margin: 16px 0px;
 	height: 50px;
 	padding: 20px;
-	border: 1px solid #E19595;
+	border: 1px solid #d07c7c;
 }
 
 form textarea {
@@ -243,7 +248,7 @@ form input[type='submit'] {
 	height: 50px;
 	display: inline-block;
 	float: right;
-	background-color: #E19595;
+	background-color: #d07c7c;
 	color: #fff;
 	border: none;
 }
