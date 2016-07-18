@@ -3,8 +3,13 @@
 	/*border: 1px solid;*/
 }
 
+/*font-family: 'Dancing Script', cursive;
+
+font-family: 'Playfair Display', serif;*/
+
 body {
 	width: 100%;
+	font-family: 'Raleway', sans-serif;
 }
 
 header {
@@ -17,25 +22,94 @@ header {
 	color: #fff;
 }
 
+h1, h2, h3, h4 {
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 27px;
+	width: 140px;
+	margin: auto;
+}
+
+h1 span {
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 20px;
+	text-transform: uppercase;
+	font-family: 'Playfair Display', serif;
+}
+
+h4{
+	font-size: 25px;
+	font-family: 'Playfair Display', serif;
+}
+
+.logo {
+	font-family: 'Dancing Script', cursive;
+}
+
+h2 {
+	font-family: 'Playfair Display', serif;
+	font-weight: normal;
+	font-size: 48px;
+}
+
+hr {
+	width: 60px;
+	height: 3px;
+	background-color: #D39696;
+	border: none;
+}
+
+header hr {
+	background-color: #fff;
+}
+
+header .title p {
+	width: 450px;
+	margin: 30px auto;
+}
+
 .title {
 	text-align: center;
 	width: 50%;
 }
 
+nav {
+	border-bottom: 1px solid black;
+	height: 50px;
+}
+
 .navigation {
+	margin: 0px;
 	list-style: none;
 	display: flex;
 	justify-content: flex-end;
+	padding: 15px 0px;
 }
 
 .navigation a {
 	text-decoration: none;
 	padding: 1em 1.5em;
 	color: #000;
+	text-transform: uppercase;
+	font-size: 10px;
 }
 
-.navigation #logoLink{
+.navigation .logo a {
+	text-transform: none;
+	font-size: 18px;
+}
+
+.navigation .logo {
 	margin-right: auto;
+}
+
+#about {
+	margin: 100px;
 }
 
 #about, .works-wrapper {
@@ -48,6 +122,7 @@ header {
 #gallery {
 	display: flex;
 	flex-wrap: wrap;
+	margin: 80px 0px;
 }
 
 /**
@@ -82,7 +157,7 @@ header {
 button#load{
 	width: 200px;
 	height: 50px;
-	margin: 80px auto 140px;
+	margin: 0px auto 140px;
 	background-color: #E19595;
 	color: #fff;
 	border: none;
@@ -91,14 +166,22 @@ button#load{
 
 #review {
 	width: 50%;
-	margin: auto;
+	margin: 0 auto 140px;
 	text-align: center;
+}
+
+#review .reviewer {
+	font-size: 12px;
 }
 
 #video {
 	background-image: url(/img/video.jpg);
 	background-size: cover;
 	height: 500px;
+}
+
+#works {
+	margin-bottom: 120px;
 }
 
 #follow {
@@ -128,15 +211,27 @@ button#load{
 	text-align: center;
 }
 
+#contact h3 {
+	padding-top: 75px;
+}
+
 form {
 	width: 585px;
 	margin: auto;
 }
 
-form input[type='text'] {
+form input[type='text'], form textarea {
 	width: 100%;
 	margin: 16px 0px;
 	height: 50px;
+	padding: 20px;
+	border: 1px solid #E19595;
+}
+
+form textarea {
+	resize: none;
+	overflow-y: auto;
+	height: 140px;
 }
 
 form p {
@@ -148,6 +243,9 @@ form input[type='submit'] {
 	height: 50px;
 	display: inline-block;
 	float: right;
+	background-color: #E19595;
+	color: #fff;
+	border: none;
 }
 
 form input[type='submit']:after {
@@ -158,4 +256,21 @@ form input[type='submit']:after {
 
 footer {
 	text-align: center;
+	height: 160px;
+}
+
+footer p.logo {
+	font-size: 18px;
+	font-weight: bold;
+	width: 90px;
+	margin:  60px auto 0px;
+}
+
+footer p.logo span {
+	font-size: 16px;
+}
+
+#copyright {
+	margin-top: 20px;
+	font-size: 13px;
 }
