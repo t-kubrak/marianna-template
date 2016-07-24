@@ -101,10 +101,10 @@
 	.navigation {
 		z-index: 10;
 	    background-color: #fff;
-	    width: 300px;
+	    width: 200px;
 	    position: absolute;
 	    /*This trasform moves the drawer off canvas.*/
-	    transform: translate(-430px, 50px);
+	    transform: translate(-330px, 50px);
 	    transition: transform 0.3s ease;
 	    display: block;
 	    flex-direction: column;
@@ -116,7 +116,7 @@
 	}
 
 	.navigation li a {
-		font-size: 20px;
+		font-size: 18px;
 	}
 
 	/* REVIEW SECTION */
