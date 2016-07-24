@@ -1,7 +1,9 @@
 /******* TABLET AND MOBILE *******/
 
-/* Works Section - Gallery */
 @media screen and (max-width: 1279px) {
+
+	/* WORKS SECTION - Gallery */
+
 	#gallery {
 		width: 70%;
 		margin: auto;
@@ -67,8 +69,10 @@
 	}
 }
 
-/** header mobile font **/
+
 @media screen and (max-width: 600px) {
+
+	/* HEADER - Font */
 	header h2 {
 		font-size: 24px;
 	}
@@ -77,11 +81,8 @@
 		width: 90% !important;
 		margin: auto;
 	}
-}
 
-/* Navigation section  */
-@media screen and (max-width: 600px) {
-
+	/* NAVIGATION SECTION  */
 	nav {
 		position: fixed;
 		top: 0;

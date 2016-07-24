@@ -18,16 +18,6 @@ button, input[type='submit'], #menu {
 	cursor: pointer;
 }
 
-header {
-	background-image: url(/img/hero.jpg);
-	background-size: cover;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: #fff;
-}
-
 h1, h2, h3, h4 {
 	font-weight: normal;
 }
@@ -42,6 +32,12 @@ h1 span {
 	font-size: 24px;
 }
 
+h2 {
+	font-family: 'Playfair Display', serif;
+	font-weight: normal;
+	font-size: 48px;
+}
+
 h3 {
 	font-size: 20px;
 	text-transform: uppercase;
@@ -53,14 +49,20 @@ h4{
 	font-family: 'Playfair Display', serif;
 }
 
-.logo {
-	font-family: 'Dancing Script', cursive;
+/******** HEADER SECTION ********/
+
+header {
+	background-image: url(/img/hero.jpg);
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
 }
 
-h2 {
-	font-family: 'Playfair Display', serif;
-	font-weight: normal;
-	font-size: 48px;
+.logo {
+	font-family: 'Dancing Script', cursive;
 }
 
 hr {
@@ -84,6 +86,8 @@ header .title p {
 	width: 50%;
 }
 
+/******** NAVIGATION SECTION ********/
+
 nav {
 	border-bottom: 1px solid black;
 	height: 50px;
@@ -97,10 +101,15 @@ nav {
 	padding: 0px 10px;
 }
 
+/* Hamburger button*/
 #menu {
 	flex: 0 0 30px;
+	padding: 8px 0px;
+    font-size: 24px;
+    visibility: hidden;
 }
 
+/* Navigation link list */
 .navigation {
 	margin: 0px;
 	list-style: none;
@@ -123,11 +132,7 @@ nav {
 	color: #000;
 }
 
-#menu {
-	padding: 8px 0px;
-    font-size: 24px;
-    visibility: hidden;
-}
+/******** ABOUT ME SECTION ********/
 
 #about {
 	margin: 100px auto;
@@ -140,6 +145,8 @@ nav {
 	align-items: center;
 }
 
+/******** WORKS SECTION ********/
+
 .works-wrapper .title {
 	width: 100%;
 }
@@ -151,6 +158,13 @@ nav {
 	margin: 80px auto;
 }
 
+/* Work gallery columns */
+.col img {
+	display: inline-block;
+	max-width: 100%;
+}
+
+/* Gallery Column 1*/
 .col-1 .row{
 	display: flex;
 	margin-bottom: 10px;
@@ -165,24 +179,6 @@ nav {
 	margin-right: 25px;
 }
 
-
-
-/**
-	Work gallery columns
-**/
-.col img {
-	display: inline-block;
-	max-width: 100%;
-}
-
-/*.col img:first-child {
-	margin-bottom: 25px;
-}*/
-
-.col img:nth-child(2) {
-	margin-right: 20px;
-}
-
 .col-1 {
 	width: 765px;
 	margin-right: 25px;
@@ -191,6 +187,8 @@ nav {
 .col-1 img:last-child {
 	margin-top: 20px;
 }
+
+/* Gallery Column 2*/
 
 .col-2 {
 	width: 440px;
@@ -230,6 +228,8 @@ button#load{
 	margin-bottom: 120px;
 }
 
+/******** FOLLOW ME SECTION ********/
+
 #follow {
 	text-align: center;
 }
@@ -238,7 +238,7 @@ button#load{
 	list-style: none;
 	display: flex;
 	justify-content: center;
-	padding: 0px; /** remove links padding **/
+	padding: 0px;
 }
 
 #social li{
@@ -249,6 +249,8 @@ button#load{
 #social a{
 	color: #848282;
 }
+
+/******** CONTACT ME SECTION ********/
 
 #contact {
 	background-image: url(/img/contact.jpg);
