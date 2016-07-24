@@ -18,6 +18,10 @@ body {
 	color: #848282;
 }
 
+button, input[type='submit'] {
+	cursor: pointer;
+}
+
 header {
 	background-image: url(/img/hero.jpg);
 	background-size: cover;
@@ -137,18 +141,39 @@ nav {
 	margin: 100px auto;
 }
 
-#about, .works-wrapper {
+#about {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 }
 
+.works-wrapper .title {
+	width: 100%;
+}
+
 #gallery {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 80px 0px;
+	justify-content: center;
+	margin: 80px auto;
 }
+
+.col-1 .row{
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.col-1 .row img {
+	display: block;
+	max-width: 100%;
+}
+
+.col-1 .row .image-wrapper:first-child {
+	margin-right: 25px;
+}
+
+
 
 /**
 	Work gallery columns
@@ -158,9 +183,9 @@ nav {
 	max-width: 100%;
 }
 
-.col img:first-child {
+/*.col img:first-child {
 	margin-bottom: 25px;
-}
+}*/
 
 .col img:nth-child(2) {
 	margin-right: 20px;
