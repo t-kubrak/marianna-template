@@ -3,10 +3,6 @@
 	/*border: 1px solid;*/
 }
 
-/*font-family: 'Dancing Script', cursive;
-
-font-family: 'Playfair Display', serif;*/
-
 html, body, header, main, nav, footer {
 	width: 100%;
 }
@@ -18,7 +14,7 @@ body {
 	color: #848282;
 }
 
-button, input[type='submit'] {
+button, input[type='submit'], #menu {
 	cursor: pointer;
 }
 
@@ -119,10 +115,6 @@ nav {
 	color: #000;
 	text-transform: uppercase;
 	font-size: 10px;
-}
-
-.logo {
-	
 }
 
 .logo a {
