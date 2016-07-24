@@ -20,10 +20,10 @@ gulp.task('default', ['styles', 'sctipts'], function() {
 
 gulp.task('styles', function() {
 	gulp.src('src/**/*.css')
-		.pipe(autoprefixer({
-			browsers: ['last 2 versions', 'iOS 6', 'iOS 7']
-		}))
 		.pipe(concat('style.css'))
+    .pipe(autoprefixer({
+      browsers: ['> 1%', 'last 2 versions']
+    }))
 		.pipe(cssnano())
 		.pipe(gulp.dest('css'))
 		.pipe(browserSync.stream());
@@ -31,11 +31,11 @@ gulp.task('styles', function() {
 
 gulp.task('sctipts', function (cb) {
   pump([
-        gulp.src('src/js/**/*.js')
-        .pipe(concat('app.js'))
-        .pipe(babel({
+        gulp.src('src/js/**/*.js'),
+        concat('app.js'),
+        babel({
             presets: ['es2015']
-        })),
+        }),
         uglify(),
         gulp.dest('js')
     ],
