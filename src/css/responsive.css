@@ -56,20 +56,6 @@
 
 /***** MOBILE ONLY*****/
 
-/****iphone 4 header ***/
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
-	body > header {
-		height: 320px;
-	}
-}
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
-	body > header {
-		height: 480px;
-	}
-}
-
-
 @media screen and (max-width: 600px) {
 
 	/* HEADER - Font */
