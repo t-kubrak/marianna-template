@@ -43,6 +43,22 @@
 				<hr>
 			</div>
 			<div id="gallery">
+				<!-- <div class="gallery-col col-1">
+					<div class="row">
+						<img src="img/nature.jpg" alt="Nature">
+					</div>
+					<div class="row">
+						<div class="row-col">
+							<img src="img/people.jpg" alt="People">
+						</div>
+						<div class="row-col">
+							<img src="img/wedding.jpg" alt="Wedding">
+						</div>
+					</div>
+					<div class="row">
+						<img src="img/architecture.jpg" alt="Architecture">
+					</div>
+				</div> -->
 				<div class="col col-1">
 					<img src="/img/nature.jpg" alt="Nature">
 					<img src="/img/people.jpg" alt="People">
@@ -50,14 +66,24 @@
 					<img src="/img/architecture.jpg" alt="Architecture">
 				</div>
 				<div class="col col-2">
-					<picture>
-				        <source media="(min-width: 1280px)" srcset="/img/urban.jpg">
-				        <img src="/img/urban-small-370.jpg" alt="Urban">
-			      	</picture>
-			      	<picture>
-				        <source media="(min-width: 1280px)" srcset="/img/animals.jpg">
-				        <img src="/img/animals-small-370.jpg" alt="Animals">
-			      	</picture>
+					<!-- <div class="row">
+						<img src="img/urban.jpg" alt="Urban">
+					</div>
+					<div class="row">
+						<img src="img/animals.jpg" alt="Animals">
+					</div> -->
+					<div class="image-wrapper">
+						<picture>
+					        <source media="(min-width: 1280px)" srcset="img/urban.jpg">
+					        <img src="img/urban-small-370.jpg" alt="Urban">
+				      	</picture>
+					</div>
+					<div class="image-wrapper">
+				      	<picture>
+					        <source media="(min-width: 1280px)" srcset="img/animals.jpg">
+					        <img src="img/animals-small-370.jpg" alt="Animals">
+				      	</picture>
+					</div>
 				</div>
 			</div>
 		</div>

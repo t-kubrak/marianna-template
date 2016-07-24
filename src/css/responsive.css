@@ -1,30 +1,28 @@
 @media screen and (max-width: 1279px) {
 	#gallery {
-		width: 720px;
+		width: 70%;
 		margin: auto;
 	}
 
 	#gallery .col-1 {
 		margin: 0px 0px 20px 0px;
+	}
+
+	#gallery .col-1, #gallery .col-2 {
 		width: 100%;
 	}
 
-	#gallery .col-2 {
-		width: 90%;
-		margin: auto;
-	}
-	
-	#gallery .col-2 img {
-		margin: 0px;
-		width: 45%;
+	.image-wrapper {
+		width: 48%;
+		display: inline-block;
 	}
 
-	#gallery .col-2 picture:first-child {
-		margin-right: 5%;
+	.image-wrapper:first-child {
+		margin-right: 20px;
 	}
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
 
 	#gallery {
 		width: 100%;
@@ -32,5 +30,34 @@
 
 	#gallery img{
 		max-width: 100%;
+	}
+}
+
+/****iphone 4 header ***/
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+	body > header {
+		height: 320px;
+	}
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+	body > header {
+		height: 480px;
+	}
+}
+
+/** header font */
+@media screen and (max-width: 600px) {
+	header h2 {
+		font-size: 24px;
+	}
+
+	.title {
+		width: 80%;
+	}
+
+	header .title p {
+		width: 80%;
 	}
 }

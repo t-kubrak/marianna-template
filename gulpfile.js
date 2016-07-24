@@ -21,7 +21,7 @@ gulp.task('default', ['styles', 'sctipts'], function() {
 gulp.task('styles', function() {
 	gulp.src('src/**/*.css')
 		.pipe(autoprefixer({
-			browsers: ['last 2 versions']
+			browsers: ['last 2 versions', 'iOS 6', 'iOS 7']
 		}))
 		.pipe(concat('style.css'))
 		.pipe(cssnano())

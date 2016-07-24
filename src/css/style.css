@@ -7,6 +7,10 @@
 
 font-family: 'Playfair Display', serif;*/
 
+html, body, header, main, nav, footer {
+	width: 100%;
+}
+
 body {
 	width: 100%;
 	font-family: 'Raleway', sans-serif;
@@ -55,7 +59,7 @@ h4{
 h2 {
 	font-family: 'Playfair Display', serif;
 	font-weight: normal;
-	font-size: 48px;
+	font-size: 6vw;
 }
 
 hr {
@@ -70,7 +74,7 @@ header hr {
 }
 
 header .title p {
-	width: 450px;
+	width: 50%;
 	margin: 30px auto;
 }
 
@@ -110,7 +114,7 @@ nav {
 }
 
 #about {
-	margin: 100px;
+	margin: 100px auto;
 }
 
 #about, .works-wrapper {
@@ -221,7 +225,7 @@ button#load{
 }
 
 form {
-	width: 585px;
+	width: 50%;
 	margin: auto;
 }
 
