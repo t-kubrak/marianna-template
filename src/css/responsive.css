@@ -1,3 +1,4 @@
+/******* TABLET *******/
 @media screen and (max-width: 1279px) {
 	#gallery {
 		width: 70%;
@@ -22,6 +23,9 @@
 	}
 }
 
+/***** MOBILE *****/
+
+/* Works Section - Gallery */
 @media screen and (max-width: 600px) {
 
 	#gallery {
@@ -34,7 +38,6 @@
 }
 
 /****iphone 4 header ***/
-
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
 	body > header {
 		height: 320px;
@@ -47,17 +50,55 @@
 	}
 }
 
-/** header font */
+/** header mobile font **/
 @media screen and (max-width: 600px) {
 	header h2 {
 		font-size: 24px;
 	}
 
-	.title {
-		width: 80%;
+	.title, .title p {
+		width: 90% !important;
+	}
+}
+
+/* Navigation section  */
+@media screen and (max-width: 600px) {
+
+	nav {
+		position: fixed;
+		top: 0;
+		background-color: #fff;
+		justify-content: flex-start !important;
 	}
 
-	header .title p {
-		width: 80%;
+	#menu {
+		visibility: visible !important;
+		align-self: flex-end;
+	}
+	
+	.navigation.open {
+		transform: translate(-130px, 50px);
+	}
+
+	.navigation {
+		z-index: 10;
+	    background-color: #fff;
+	    width: 300px;
+	    position: absolute;
+	    /*This trasform moves the drawer off canvas.*/
+	    transform: translate(-430px, 50px);
+	    /*Optionally, we animate the drawer.*/
+	    transition: transform 0.3s ease;
+	    display: block;
+	    flex-direction: column;
+	}
+
+	.navigation li {
+		display: list-item;
+		padding: 14px;
+	}
+
+	.navigation li a {
+		font-size: 20px;
 	}
 }

@@ -14,6 +14,7 @@ html, body, header, main, nav, footer {
 body {
 	width: 100%;
 	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
 	color: #848282;
 }
 
@@ -59,7 +60,7 @@ h4{
 h2 {
 	font-family: 'Playfair Display', serif;
 	font-weight: normal;
-	font-size: 6vw;
+	font-size: 48px;
 }
 
 hr {
@@ -86,6 +87,18 @@ header .title p {
 nav {
 	border-bottom: 1px solid black;
 	height: 50px;
+	display: flex;
+	justify-content: space-around;
+    align-items: stretch;
+}
+
+.logo {
+	flex: 0 0 100px;
+	padding: 0px 10px;
+}
+
+#menu {
+	flex: 0 0 30px;
 }
 
 .navigation {
@@ -104,13 +117,20 @@ nav {
 	font-size: 10px;
 }
 
-.navigation .logo a {
-	text-transform: none;
-	font-size: 18px;
+.logo {
+	
 }
 
-.navigation .logo {
-	margin-right: auto;
+.logo a {
+	text-decoration: none;
+	font-size: 18px;
+	color: #000;
+}
+
+#menu {
+	padding: 8px 0px;
+    font-size: 24px;
+    visibility: hidden;
 }
 
 #about {

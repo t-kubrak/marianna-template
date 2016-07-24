@@ -20,8 +20,11 @@
 	</div>
 </header>
 <nav>
-	<ul class="navigation">
-		<li class="logo"><a href="#">MariaAnna</a></li>
+	<p class="logo"><a href="#">MariaAnna</a></p>
+	<a id="menu" class="nav_menu">
+      ☰
+    </a>
+    <ul class="navigation">
 		<li><a href="#">About me</a></li>
 		<li><a href="#">Works</a></li>
 		<li><a href="#">Contact me</a></li>
@@ -125,6 +128,23 @@
 	<p id="copyright">&copy; Copyright 2016 MariaAnna</p>
 </footer>
 
+<script>
+      /*
+       * Open the drawer when the menu ison is clicked.
+       */
+      var menu = document.querySelector('#menu');
+      var main = document.querySelector('main');
+      var drawer = document.querySelector('.navigation');
+
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+      });
+      main.addEventListener('click', function() {
+        drawer.classList.remove('open');
+      });
+
+    </script>
 <script src="js/app.js" async></script>
 </body>
 </html>
