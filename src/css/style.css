@@ -52,7 +52,7 @@ h4{
 /******** HEADER SECTION ********/
 
 header {
-	background-image: url(/img/hero.jpg);
+	background-image: url(../img/hero.jpg);
 	background-size: cover;
 	height: 100vh;
 	display: flex;
@@ -219,7 +219,7 @@ button#load{
 }
 
 #video {
-	background-image: url(/img/video.jpg);
+	background-image: url(../img/video.jpg);
 	background-size: cover;
 	height: 500px;
 }
@@ -253,7 +253,7 @@ button#load{
 /******** CONTACT ME SECTION ********/
 
 #contact {
-	background-image: url(/img/contact.jpg);
+	background-image: url(../img/contact.jpg);
 	background-size: cover;
 	height: 695px;
 	text-align: center;
